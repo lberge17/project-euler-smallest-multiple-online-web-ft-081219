@@ -11,7 +11,7 @@ class SmallestMultiple
     def lcm
         multiple = 1
         (2..@limit).each do |divisor|
-            # the number multiplied by each number in the limit and then divided by the greatest common factor of both
+            # the number multiplied by each number in the limit and then divided by the greatest common denominator of both
             multiple *= divisor / gcd(multiple, divisor)
         end
         multiple
